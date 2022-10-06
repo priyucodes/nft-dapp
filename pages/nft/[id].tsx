@@ -47,8 +47,9 @@ const NFTDropPage = () => {
           </h1>
           <button
             onClick={() => (address ? disconnect() : connectWithMetamask())}
-            className="rounded-full bg-rose-400 text-white px-4 py-2 text-xs font-bold lg:px-5 lg:py-2.5 lg:text-base"
+            className={`rounded-full bg-rose-400 text-white px-4 py-2 text-xs font-bold lg:px-5 lg:py-2.5 lg:text-base `}
           >
+            {/* ${!address && 'bg-gray-300'} */}
             {address ? 'Sign Out' : ' Sign In'}
           </button>
         </header>
